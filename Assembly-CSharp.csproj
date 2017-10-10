@@ -110,6 +110,7 @@
      <Compile Include="Assets\Scripts\GhostHealth.cs" />
      <Compile Include="Assets\Scripts\GhostMovement.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
      <None Include="Assets\Micro-Hubert-Faceted\_source\Models\micro_ghost_animations_list.txt" />
      <None Include="Assets\Malbers Animations\Common\Scripts\Utility\Compatible SA\Water\Shaders\FXWaterPro.shader" />
  <Reference Include="UnityEngine.UI">
