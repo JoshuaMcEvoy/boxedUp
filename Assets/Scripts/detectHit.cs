@@ -8,9 +8,21 @@ public class detectHit : MonoBehaviour {
 	public Slider healthbar;
 	Animator anim;
 
-	void OnTriggerEnter(Collider Other){
-		healthbar.value -= 20;
-//		Debug.Log ("hit");
+	public string opponent;
+
+
+	void OnTriggerEnter(Collider other){
+
+		if (other.gameObject.tag != opponent)
+			return;
+
+		//listen for left mouse click
+		if (Input.GetMouseButtonDown(0)){
+			//set time out
+			//reset timeout
+			healthbar.value -= 20;
+	//		Debug.Log ("hit");
+		}
 
 		if (healthbar.value <= 0) {
 			anim.SetBool ("isDead", true);
