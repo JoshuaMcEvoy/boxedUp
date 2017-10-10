@@ -29,11 +29,11 @@ public class GhostMovement : MonoBehaviour {
 
 	void TargetPlayer () {
 		Debug.DrawLine(myTransform.position, target.position, Color.red);
-		//rotate position
-		myTransform.rotation = Quaternion.Slerp(myTransform.rotation, Quaternion.LookRotation(target.position - myTransform.position), rotateSpeed * Time.deltaTime);
-		//move towards player
 		float distance = Vector3.Distance (target.position, myTransform.position);
 		if(distance < maxDistance) {
+			//rotate position
+			myTransform.rotation = Quaternion.Slerp(myTransform.rotation, Quaternion.LookRotation(target.position - myTransform.position), rotateSpeed * Time.deltaTime);
+			//move towards player
 			myTransform.position += myTransform.forward * movementSpeed * Time.deltaTime;
 		}
 

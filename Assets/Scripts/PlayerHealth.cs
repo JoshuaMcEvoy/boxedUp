@@ -28,7 +28,14 @@ public class PlayerHealth : MonoBehaviour {
 
 	public void ChangeHealth (int health) {
 		currentHealth += health;
-
 		hbLength = (Screen.width / 2) * (currentHealth / (float)maximumHealth);
+		if (currentHealth <= 0) {
+			Dead ();
+		}
+	}
+
+	void Dead(){
+		Destroy (this.gameObject);
+		Debug.Log ("you died");
 	}
 }﻿

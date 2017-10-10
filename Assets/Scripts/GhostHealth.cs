@@ -28,7 +28,13 @@ public class GhostHealth : MonoBehaviour {
 
 	public void ChangeHealth (int health) {
 		currentHealth += health;
-
 		hbLength = (Screen.width / 2) * (currentHealth / (float)maximumHealth);
+		if (currentHealth <= 0) {
+			Dead ();
+		}
+	}
+
+	void Dead(){
+		Destroy (this.gameObject);
 	}
 }﻿

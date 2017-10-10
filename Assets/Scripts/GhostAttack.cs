@@ -17,8 +17,10 @@ public class GhostAttack : MonoBehaviour {
 		GameObject go = GameObject.FindGameObjectWithTag ("Player");
 		target = go.transform;
 		myTransform = transform;
+		//how close the emeny will get to the player.
 		maxDistance = 1;
 		coolDownTimer = 0;
+		//how much hp the player will lose with each attack.
 		damage = -2;
 
 		ph = (PlayerHealth)go.GetComponent (typeof(PlayerHealth));
@@ -34,8 +36,6 @@ public class GhostAttack : MonoBehaviour {
 		if (coolDownTimer > 0) {
 			coolDownTimer = coolDownTimer * Time.deltaTime;
 		}
-
-
 	}
 
 	void Attack (){
