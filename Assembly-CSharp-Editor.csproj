@@ -81,6 +81,7 @@
      <None Include="Assets\Micro-Hubert-Faceted\_source\Models\micro_ghost_animations_list.txt" />
      <None Include="Assets\Particlecollection_Magic_ring\READ ME.txt" />
      <None Include="Assets\Particlecollection_Magic_ring\Plugins\Effect\Shader\effect_distortion_mask.shader" />
+     <None Include="Assets\Micro-Skeleton-Tom-Faceted\_source\Models\micro_skeleton_tom_animation_list.txt" />
      <None Include="Assets\Particlecollection_Magic_ring\Plugins\Effect\Shader\ParticleAddSoftEffect.shader" />
      <None Include="Assets\LP_Fire\ScriptsAndShaders\Particles_Lit_Emissive.shader" />
      <None Include="Assets\Particlecollection_Magic_ring\Plugins\Effect\Shader\ParticlePremultiplyBlend.shader" />

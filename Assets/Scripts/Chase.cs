@@ -26,26 +26,29 @@ public class Chase : MonoBehaviour {
 		//creates an angle view in front of the enemy
 		float angle = Vector3.Angle (direction, this.transform.forward);
 
-		if (Vector3.Distance(player.position, this.transform.position) < 30 && angle < 45) {
+		if (Vector3.Distance(player.position, this.transform.position) < 10 && angle < 90) {
 			
 
 			//stops the enemy from falling backwards when you get too close. 
 			direction.y = 0;
 			//slowly turn the enemy to face the player.
-			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.5f);
+			this.transform.rotation = Quaternion.Slerp(this.transform.rotation, Quaternion.LookRotation(direction), 0.7f);
 
 			//set animation booleans 
 			anim.SetBool ("isIdle", false);
 			if (direction.magnitude > 1) {  
 				//this will make enemy slow once out of range
-				this.transform.Translate(0, 0, 0.05f);
+				this.transform.Translate(0, 0, 0.2f);
+				Debug.Log ("Walking");
 				anim.SetBool ("isWalking", true);
 				anim.SetBool ("isAttacking", false);
 			} else {
+				
 				anim.SetBool ("isAttacking", true);
 				anim.SetBool ("isWalking", false);
 			}
 		} else {
+//			Debug.Log ("Idle");
 			anim.SetBool ("isIdle", true);
 			anim.SetBool ("isWalking", false);
 			anim.SetBool ("isAttacking", false);

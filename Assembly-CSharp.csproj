@@ -78,6 +78,7 @@
      <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\AnimalVariables.cs" />
      <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\AttackTrigger.cs" />
      <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\HashIDsAnimal.cs" />
+     <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\ItemPickup.cs" />
      <Compile Include="Assets\Malbers Animations\Common\Scripts\Animal\MakeDamage.cs" />
      <Compile Include="Assets\Malbers Animations\Common\Scripts\Events\MalbersEvents.cs" />
      <Compile Include="Assets\Malbers Animations\Common\Scripts\iMalbersInput.cs" />
@@ -119,14 +120,15 @@
      <Compile Include="Assets\Scripts\Chase.cs" />
      <Compile Include="Assets\Scripts\detectHit.cs" />
      <Compile Include="Assets\Scripts\GhostAttack.cs" />
-     <Compile Include="Assets\Scripts\GhostHealth.cs" />
      <Compile Include="Assets\Scripts\GhostMovement.cs" />
+     <Compile Include="Assets\Scripts\LookAtCameraYonly.cs" />
      <Compile Include="Assets\Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\ThirdPersonCamera.cs" />
      <None Include="Assets\LP_Fire\ScriptsAndShaders\Particles_Lit.shader" />
      <None Include="Assets\Micro-Hubert-Faceted\_source\Models\micro_ghost_animations_list.txt" />
      <None Include="Assets\Particlecollection_Magic_ring\READ ME.txt" />
      <None Include="Assets\Particlecollection_Magic_ring\Plugins\Effect\Shader\effect_distortion_mask.shader" />
+     <None Include="Assets\Micro-Skeleton-Tom-Faceted\_source\Models\micro_skeleton_tom_animation_list.txt" />
      <None Include="Assets\Particlecollection_Magic_ring\Plugins\Effect\Shader\ParticleAddSoftEffect.shader" />
      <None Include="Assets\LP_Fire\ScriptsAndShaders\Particles_Lit_Emissive.shader" />
      <None Include="Assets\Particlecollection_Magic_ring\Plugins\Effect\Shader\ParticlePremultiplyBlend.shader" />

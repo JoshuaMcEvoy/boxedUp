@@ -13,15 +13,16 @@ public class detectHit : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other){
 
-		if (other.gameObject.tag != opponent)
-			return;
+
+//		if (other.gameObject.tag != opponent)
+//			return;
 
 		//listen for left mouse click
 		if (Input.GetMouseButtonDown(0)){
 			//set time out
 			//reset timeout
 			healthbar.value -= 20;
-	//		Debug.Log ("hit");
+			Debug.Log ("hit");
 		}
 
 		if (healthbar.value <= 0) {

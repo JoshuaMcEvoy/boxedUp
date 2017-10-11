@@ -12,7 +12,7 @@ public class ThirdPersonCamera : MonoBehaviour {
 
 	private Camera cam;
 
-	private float distance = 5.0f;
+	public float distance = 5.0f;
 	private float currentX = 0.0f;
 	private float currentY = 0.0f;
 	private float sensivityX = 4.0f;
@@ -33,6 +33,12 @@ public class ThirdPersonCamera : MonoBehaviour {
 
 		if(Input.GetKeyDown("escape")){
 			Cursor.lockState = CursorLockMode.None;
+		}
+
+		if (Input.GetAxis ("Mouse ScrollWheel") < 0 && distance < 10) {
+			distance += 0.5f;
+		} else if (Input.GetAxis ("Mouse ScrollWheel") > 0 && distance > 0) {
+			distance -= 0.5f;
 		}
 	}
 
